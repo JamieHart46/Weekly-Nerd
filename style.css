@@ -1,0 +1,257 @@
+:root {
+    --creme: rgb(203, 200, 185);
+    --backgroundGray: rgb(97, 95, 95);
+    --darkGray: rgb(53, 52, 52);
+}
+
+* {
+    color: var(--creme);   
+    font-family: 'Roboto';
+
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/RobotoFlex.ttf);  
+}
+
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	/* overflow-scrolling: touch; */
+
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backgroundGray);
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+	position: relative;
+    height: unset;
+}
+
+ header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    background-color: var(--darkGray);
+    border-bottom: 1px solid rgb(203, 200, 185); 
+    color: white;
+
+    width: 100%;
+    height: 4em;
+    padding: 1em 3em;
+
+    z-index: 2;   
+}
+
+a {
+    padding: .5em;
+}
+
+  main {
+    margin-top: 5em;
+  }
+
+  footer {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+h2 {
+    background-color: var(--darkGray);
+    padding: 1em;
+    color: white;
+}
+
+h3 {
+    background-color: var(--darkGray);
+    width: 100%;
+    
+    padding: 1em 3em;
+    margin: 0;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 1em 3em; 
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.5em;
+
+    padding: 1em;
+    border: 1px solid var(--creme);
+    border-radius: 1em;
+}
+
+h6 {
+    font-size: 1em;
+
+    padding: 1em;
+    margin: 0;
+}
+
+p {
+    padding: 1em 3em;
+    margin:0;
+}
+
+.extra {
+  height: 100vh;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2em;
+}
+
+.inleiding {
+    width: 50%
+}
+
+#weeklyNerds {
+    scroll-margin-top: 5em;
+}
+
+.lastContainer {
+  height: 100vh;
+}
+
+.descriptionPanelBlue {
+    display: flex;
+    border-top: 1px solid var(--creme);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.panelRed {
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: 5em;
+}
+
+.slideDeel {
+    width: 50%;
+}
+
+.panelOrange {
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: 5em;
+}
+
+.panelLayout {
+    display: flex;
+}
+
+ul {
+    padding: .5em 1.5em;
+
+    border: 1px solid var(--creme);
+    border-radius: 1em;
+}
+
+.panelPurple {
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: 5em;
+}
+
+.panelGreen {
+    width: 100vw;
+    height: 100vh;
+
+    margin-top: 5em;
+}
+
+.voorbeelden {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Fonts, #Fonts * {
+    font-family: 'EB Garamond', serif;
+    font-feature-settings: "liga" 1;
+  }
+
+span {
+    font-variant-numeric: diagonal-fractions;
+}
+
+#Hackaton {
+    scroll-margin-top: 5.5em;
+}
+
+.projectFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+}
+
+iframe {
+    width: 60vw;
+
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.Site {
+    width: 60vw;
+    aspect-ratio: 4/2;
+}
+
+.Telefoon {
+    width: 25vw;
+    aspect-ratio: 2/4;
+}
+
+#Reflectie {
+    scroll-margin-top: 5.5em;
+}
+
+.kaarten {
+    display: flex;
+    justify-content: center;
+
+    padding: 2em;
+}
+
+.doelCard {
+    max-width: 25vw;
+
+    border: 1px solid var(--creme);
+    border-radius: 1em;
+
+    margin: 1em;
+}
+
+.doelCard:hover {
+    transform: scale(1.1);
+}
