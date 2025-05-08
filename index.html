@@ -13,7 +13,7 @@
 <header>
     <h1>Jamie Hart</h1>
 
-    <nav>
+    <nav class="headNav">
       <a href="#Projecten">Projecten</a>     
       <a href="#weeklyNerds">Weekly Nerds</a>
       <a href="#Hackaton">Hackaton</a>
@@ -23,39 +23,59 @@
 </header>
 
 <main>
-<div class="firstContainer">
+<div class="firstContainer" id="home">
+  <h2>Inleiding</h2>
   <div class="inleiding">
-    <h3>Inleiding</h3>
-    <div>
-    <p>Ik ben Jamie Hart en ik ben student bouwkunde op het HVA en ik volg de minor web design & development. Gedurende deze minor heb ik veel geleerd over coderen en design
-      en de verschillende aspecten ervan en deze blog is een overzicht van alles.
+    <p>Ik ben Jamie Hart en ik ben student Built Envirnoment Stedenbouw op het HVA en ik volg de minor web design & development. Ik heb deze minor gekozen,
+       omdat ik web design mij heel interessant en leuk leek en, omdat ik denk dat ik veel van wat ik hier leer later ook kan toepassen voor websites van
+       projecten in de stedenbouw.
     </p>
-    <p> De minor bestaat uit een aantal onderdelen en opdrachten</p>
     <p>Dit is een blog van de ontwikkeling van mijn kennis van web design & development. Tijdens de minor zijn er bijna elke week gastsprekers geweest 
         om te praten over een bepaald onderwerp die ons zou moeten helpen met de projecten en in deze blog is een overzicht van wat ik allemaal mee heb 
         genomen hieruit en nu ermee kan.</p>
-      </div>
   </div>
+
+  <nav class="homeNav">
+    <a href="#Projecten">Projecten</a>     
+    <a href="#weeklyNerds">Weekly Nerds</a>
+    <a href="#Hackaton">Hackaton</a>
+    <a href="#Reflectie">Reflectie</a>
+    <a href="#Leerdoelen">Leerdoelen</a>
+  </nav>
 </div> 
 
 <div class="firstContainer" id="Projecten">
-    <h3>Projecten</h3>
+    <h2>Projecten</h2>
+    <p>Hier is een overzicht van alle projecten die ik tijdens de minor heb gemaakt, voor de vakken CSS to the rescue, BrowserTechnologies, API en Human Centered Design.</p>
+    <div class="projectLayOut">
     <iframe class="Site" src="https://jamiehart46.github.io/CSS-to-the-rescue/" title="Duck shooter spelletje vak CSS to the rescue"></iframe>
     <iframe class="Site"  src="https://jamiehart46.github.io/Browser-Technologies/index.html" title="Belasting formulier vak Browser-Technologies"></iframe>
     <iframe class="Site" src="https://bet-helper.onrender.com/" title="Voetbal bet helper website voor vak API"></iframe>
+    </div>
+
     <iframe class="Telefoon" src="https://jamiehart46.github.io/Human-centered-design/" title="Toetsenbord voor Erik voor vak Human-centered-design"></iframe>
 </div>
 
-  <h3 id="weeklyNerds">Weekly Nerds</h3>
+  <h2 id="weeklyNerds">Weekly Nerds</h3>
   <div class="container">
     <div class="descriptionPanelBlue">
         <div class="slideDeel">
+          <div class="NerdLayout">
+          <div class="nerdCard">
           <h3>Kylian Valkhof</h3>
-          <p>De eerste weekly nerd, was van Kylain Valkhof. Waar het op neer kwam is dat als je iets gaat maken, je altijd de minst krachtige taal gebruikt om dit te doen. Javascript is een heel erg sterke codeertaal. Dit moet dus altijd het laatste zijn wat je gebruikt. Als iets met html kan, gebruik je eerst html. Zo niet gebruik je css en als het ook niet met css kan, pas dan gebruik je Javascript</p>
+          <img src="Images/KylianValkhof.jpeg">
+          </div>
+          <p>De eerste weekly nerd, was van Kylain Valkhof. Waar het op neer kwam is dat als je iets gaat maken, je altijd de minst krachtige taal gebruikt om dit te doen. Javascript is een heel erg sterke codeertaal. Dit moet dus altijd het laatste zijn wat je gebruikt. Als iets met html kan, gebruik je eerst html. 
+            Zo niet gebruik je css en als het ook niet met css kan, pas dan gebruik je Javascript</p>
+          </div>
           <h4>"Rule of least power"</h4>
       </div>
       <div class="slideDeel">
-        <h3> Roel Nieskens</h3>  
+        <div class="NerdLayout">
+        <div class="nerdCard">
+          <h3>Roel Nieskens</h3>
+          <img src="Images/">
+          </div class=nerdCard>  
             <p>Fonts hebben verschillende features in het browser die het uiterlijk van de tekst kunnen aanpassen. Deze features kunnen
               betrekking hebben tot letters, cijfers, eenheden, etc.
               bijvoorbeeld:</p>
@@ -64,13 +84,16 @@
                 <h5> 1/3 wordt <span>1/3</span></h5> 
                 <h5> f i wordt fi</h5>
             </div>   
-        <div class="scroll-down"><div class="arrow"></div></div>
+          </div>
       </div>
     </div>
 
     <section class="descriptionPanelBlue">
       <div class="slideDeel">
-        <h3>Cassie Evans - GSAP</h3>
+        <div class="nerdCard">
+          <h3>Cassie Evans</h3>
+          <img src="Images/CassieEvans.png">
+          </div>
         <h4>"Animate Anything"</h4>
           <div class="panelLayout">
             <p>GSAP is een API die gebruikt kan worden om alles op een pagina moeiteloos te animeren.
@@ -86,7 +109,10 @@
         </div>
 
         <div class="slideDeel">
-          <h3>Jeremy Keith - Imperative or declaritive design</h3>
+          <div class="nerdCard">
+            <h3>Jeremy Keith</h3>
+            <img src="Images/Author_Jeremy_Keith_large.jpg">
+            </div>
         <p>Jeremy sprak in zijn college over een aantal verschillende dingen. Ten eerste zijn twee soorten programmeren. Imperative en declaritive. Imperative is stap voor stap, zoals het browser het leest en uitvoert.
             Een voorbeeld van een Imperatieve taal is Javascript.
             Dan is er declaritive. Dit is het benoemen van de output, zoals wordt gedaan met HTML en et CSS.
@@ -104,11 +130,17 @@
 
     <section class="descriptionPanelBlue">
       <div class="slideDeel">
-        <h3>Julia Miocene - Animaties met karakter</h3>
+        <div class="nerdCard">
+          <h3>Nils Binder</h3>
+          <img src="Images/">
+          </div>
       </div>
 
       <div class="slideDeel">
-        <h3>Rosa - Circut bending</h3>
+        <div class="nerdCard">
+          <h3>Julia Miocene</h3>
+          <img src="Images/">
+          </div>
         <p></p>
       </div>
     </section>
@@ -118,67 +150,58 @@
 
   <section class="descriptionPanelBlue">
     <div class="slideDeel">
-      <h3>Nienke de Keizer</h3>
+      <div class="nerdCard">
+        <h3>Rosa</h3>
+        <img src="Images/">
+        </div>
         <div class="panelLayout">
-          <p>GSAP is een API die gebruikt kan worden om alles op een pagina moeiteloos te animeren.
-            Het gebruikt hiervoor tweening en dit zorgt ervoor dat de animatie heel smooth verloopt.</p>
-            <ul>
-             <li>Scroll-driven</li>
-             <li>Text</li>
-             <li>SVG</li>
-             <li>UI interactions</li>
-             <li>etc</li>
-            </ul>
+          
          </div>
       </div>
 
       <div class="slideDeel">
-        <h3>Niels Leenheer - Project Fugu</h3>
-      <p>Jeremy sprak in zijn college over een aantal verschillende dingen. Ten eerste zijn twee soorten programmeren. Imperative en declaritive. Imperative is stap voor stap, zoals het browser het leest en uitvoert.
-          Een voorbeeld van een Imperatieve taal is Javascript.
-          Dan is er declaritive. Dit is het benoemen van de output, zoals wordt gedaan met HTML en et CSS.
-      </p>
-      <p>
-          Verder heeft hij het gehad over Pastels law voor user interactions. Dit ging erover dat je niet te streng moet zijn op de invoer van de
-          gebruiker. Als de gebruiker bijvoorbeeld bij de invoer niet dezelfde formmat voor iets gebruikt als bedoeld was, 
-          laat het dan alsnog werken.
-          Zorg dat je fouten van de gebruiker kan opvangen, zodat de pagina makkelijker en fijner te gebruiken is.
-      </p>
-      <h4>"Be liberal in what you accept, and conservative in what you send"</h4>
-      <p> oftewel, wees vrij in wat je accepteerd en streng in wat je uitstuurt.</p>
+        <div class="nerdCard">
+          <h3>Niels Leenheer</h3>
+          <img src="Images/">
+          </div>
+        </section>
       </div>
-  </section>
 
-      <h3>Niels Leenheer - Project Fugu</h3>
-      <p></p>
-    </div>
-  
-    <div>
-        <h3>Nienke de Keizer - Accesibility Meetup</h3>
+      <section class="descriptionPanelBlue">
+    <div class="slideDeel">
+      <div class="nerdCard">
+        <h3>Nienke de Keizer</h3>
+        <img src="Images/">
+        </div>
         <p>Veel bedrijven houden bij het ontwikkelen van hun apps of websites weinig tot geen rekening met mensen met een beperking.
           Slechtzienden of blinden, slechthorend of doven, of mensen met een fysieke beperking kunnen daardoor slecht of geen gebruik hiervan maken.
         </p>
     </div>
+  </section>
   </div>
 
   <section id="Hackaton">
-    <h3>Hackaton</h3>
+    <h2>Hackaton</h2>
   <div class="projectFrame">
-    <p></p>
     <iframe class="Site" src="https://redmugg.github.io/Styling-Pulse/" title="Hackaton project"></iframe>
   </div>
   </section>
 
   <section id="Reflectie">
-    <h3>Reflectie</h3>
-    <p>Van de weekly nerds die er tot nu toe zijn geweest, zijn er een aantal waar ik iets aan gehad heb gehad voor de projecten waar wij op dat moment 
-      mee bezig waren en een aantal niet. 
+    <h2>Reflectie</h2>
+    <p>Ik heb al heel veel geleerd sinds het begin van de minor en ik heb voor mijn gevoel enorm veel kennis opgedaan over coderen in HTML CSS en Javascript.
+      Ik merk dat ik vaak nog wel moeite heb met mijn ontwerpen mooi maken, wat terug te zien is in deze pagina denk ik.
+       Ik weet vaak niet hoeveel padding, of margin er op tekst moet, wat voor layout ik moet maken en wat er bij het concept past of
+       welke kleuren ik moet gebruiken en wat er goed uitziet.
     </p>
-    <p>Tot nu toe heb ik voor mijn gevoel enorm veel kennis opgedaan over coderen en web design. </p>
+
+    <p> Aam het begin van de minor had ik geen kennis over wat er mogelijk was met coderen en met HTML CSS en Javascript. Tijdens de hackaton zorgde dit ervoor
+      dat ik voor mijn gevoel niet genoeg bijdrage kon doen op het vlak van ontwerp of ideéen. Ik heb het idee dat ik op dat vlak veel meer zou moeten kunnen.
+    </p>
   </section>
 
   <section id="Leerdoelen">
-    <h3>Leerdoelen</h3>
+    <h2>Leerdoelen</h2>
   <div class="kaarten">
     <div class="doelCard">
       <h6>1. Beter en professioneler uitziende websites kunnen ontwerpen.</h6>

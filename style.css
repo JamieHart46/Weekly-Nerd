@@ -53,7 +53,12 @@ body {
 }
 
 a {
+    text-decoration: none;
+    font-weight: bold;
     padding: .5em;
+
+    border: 1px solid var(--creme);
+    
 }
 
   main {
@@ -71,13 +76,18 @@ h1 {
   }
   
 h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--darkGray);
     padding: 1em;
     color: white;
+
+    width: 100%;
+    margin: 0;
 }
 
 h3 {
-    background-color: var(--darkGray);
     width: 100%;
     
     padding: 1em 3em;
@@ -109,6 +119,7 @@ h6 {
 }
 
 p {
+    max-width: 60%;
     padding: 1em 3em;
     margin:0;
 }
@@ -126,12 +137,51 @@ p {
   margin-bottom: 2em;
 }
 
+#home {}
+
 .inleiding {
-    width: 50%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeNav {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid var(--creme);
+    border-radius: 1em;
+    background-color: var(--darkGray);
 }
 
 #weeklyNerds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     scroll-margin-top: 5em;
+}
+
+.nerdCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--darkGray);
+    border-radius: 1em;
+}
+
+.NerdLayout {
+    display: flex;
+}
+
+img {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+
+    padding: 1em;
 }
 
 .lastContainer {
@@ -140,30 +190,20 @@ p {
 
 .descriptionPanelBlue {
     display: flex;
-    border-top: 1px solid var(--creme);
+    justify-content: center;
+    flex-wrap: wrap;
 
     width: 100vw;
-    height: 100vh;
-}
-
-.panelRed {
-    width: 100vw;
-    height: 100vh;
-
-    margin-top: 5em;
 }
 
 .slideDeel {
-    width: 50%;
+    width: 45%;
+
+    border: 1px solid var(--creme);
+    border-radius: 1em;
+
+    margin: .5em;
 }
-
-.panelOrange {
-    width: 100vw;
-    height: 100vh;
-
-    margin-top: 5em;
-}
-
 .panelLayout {
     display: flex;
 }
@@ -173,20 +213,6 @@ ul {
 
     border: 1px solid var(--creme);
     border-radius: 1em;
-}
-
-.panelPurple {
-    width: 100vw;
-    height: 100vh;
-
-    margin-top: 5em;
-}
-
-.panelGreen {
-    width: 100vw;
-    height: 100vh;
-
-    margin-top: 5em;
 }
 
 .voorbeelden {
@@ -215,6 +241,17 @@ span {
     padding: 1em;
 }
 
+.projectLayOut {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1fr;
+
+    width: 100%;
+    padding: 1em;
+}
+
 iframe {
     width: 60vw;
 
@@ -223,8 +260,8 @@ iframe {
 }
 
 .Site {
-    width: 60vw;
-    aspect-ratio: 4/2;
+    width: 45%;
+    aspect-ratio: 4/3;
 }
 
 .Telefoon {
@@ -233,6 +270,9 @@ iframe {
 }
 
 #Reflectie {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     scroll-margin-top: 5.5em;
 }
 
@@ -246,6 +286,7 @@ iframe {
 .doelCard {
     max-width: 25vw;
 
+    background-color: var(--darkGray);
     border: 1px solid var(--creme);
     border-radius: 1em;
 
