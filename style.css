@@ -119,9 +119,12 @@ h6 {
 }
 
 p {
-    max-width: 60%;
-    padding: 1em 3em;
+    padding: 1em;
     margin:0;
+}
+
+#Leerdoelen p {
+    width: 100% !important;
 }
 
 .extra {
@@ -137,8 +140,6 @@ p {
   margin-bottom: 2em;
 }
 
-#home {}
-
 .inleiding {
     display: flex;
     justify-content: center;
@@ -153,6 +154,8 @@ p {
     border: 1px solid var(--creme);
     border-radius: 1em;
     background-color: var(--darkGray);
+
+    width: 30%;
 }
 
 #weeklyNerds {
@@ -284,7 +287,7 @@ iframe {
 }
 
 .doelCard {
-    max-width: 25vw;
+    max-width: 20vw;
 
     background-color: var(--darkGray);
     border: 1px solid var(--creme);
